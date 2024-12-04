@@ -1,0 +1,54 @@
+table{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    border: 1px solid black;
+}
+
+tr, td{
+    text-align: center;
+    border: 1px solid black;
+}
+
+/*every other row is highlighted in the table*/
+td :nth-child(even){
+    background-color: azure;
+}
+
+/*removes bullet points from list*/
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(49, 47, 40, 0.246);
+    overflow: hidden; 
+}
+
+li{
+    text-align: center;
+    float: left;
+    border-right: 1px solid snow;
+}
+
+li:last-child{
+    border-right: none;
+}
+
+/*makes 'a' element into a block, i.e. means that not only the text is selectable*/
+li a{
+    display: block;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*changes color on hover over*/
+li a:hover{
+    background-color: rgb(138, 136, 132);
+    color: white;
+}
+
+/*changes color on hover over*/
+.active{
+    background-color: rgba(206, 174, 11, 0.888);
+    color: white;
+}
