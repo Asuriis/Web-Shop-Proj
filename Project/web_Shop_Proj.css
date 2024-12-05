@@ -63,17 +63,17 @@ li a:hover, .dropdown:hover .dropdownBtn{
     cursor: pointer;
 }
 
-/*positions the dropdown*/
+/*positions the dropdown (parent)*/
 li.dropdown{
     display: inline-block;
-    position: relative;
+    position: absolute;
 }
 
-/*style the dropdown content*/
+/*style the dropdown content (child)*/
 .dropdownContent{
     display: none;
-    position: absolute;
-    background-color: blue;
+    position: relative;
+    background-color: mediumaquamarine;
     min-width: 200px;
     box-shadow: 0px 8px 16px 0px rgb(9, 9, 9);
     z-index: 1;
