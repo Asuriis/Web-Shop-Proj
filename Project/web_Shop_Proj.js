@@ -33,9 +33,9 @@ const navBarElem = document.querySelectorAll('.navBar');
 }*/
 
 for (const navBar of navBarElem){
-    navBar.addEventListener('click', function selected(event) {
+    navBar.addEventListener('click', function onSelect(event){
         navBar.classList.add('active');
-        console.log('works?');
+        console.log(navBar.id);
     });
 }
 
