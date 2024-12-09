@@ -97,3 +97,28 @@ li.dropdown{
 .dropdown:hover .dropdownContent{
     display: block;
 }
+
+.column{
+    float: left;
+    height: 600px;/*for testing purposes comment out before done*/
+}
+
+.side{
+    width: 10%;
+    background-color: aliceblue;
+}
+
+.middle{
+    width: 80%;
+    background-color: aquamarine;
+}
+
+.divider{
+    width: 50%;
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
