@@ -65,6 +65,9 @@ function showProducts(product){
         row.insertCell().innerText = productDetails.title;
         row.insertCell().innerText = productDetails.description;
         row.insertCell().innerText = '$'+productDetails.price;
-        row.insertCell().innerHTML = productDetails.image;
+        let img = document.createElement('img');
+        img.setAttribute('style', 'width: 250px; height: 250px');
+        img.src = productDetails.image;
+        row.insertCell().appendChild(img);
     }
 }

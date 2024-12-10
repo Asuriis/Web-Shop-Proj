@@ -10,11 +10,6 @@ tr, td{
     border: 1px solid black;
 }
 
-/*every other row is highlighted in the table*/
-td :nth-child(even){
-    background-color: azure;
-}
-
 /*removes bullet points from list*/
 ul{
     list-style-type: none;
@@ -106,12 +101,12 @@ li.dropdown{
 
 .side{
     width: 5%;
-    background-color: rgb(176, 245, 175);
+    /*background-color: rgb(176, 245, 175);*/
 }
 
 .middle{
     width: 90%;
-    background-color: rgb(143, 243, 142);
+    /*background-color: rgb(143, 243, 142);*/
 }
 
 .divider{
