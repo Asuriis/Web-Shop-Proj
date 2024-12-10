@@ -1,7 +1,8 @@
-/*table{
+table{
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     border: 1px solid black;
+    width: 100%;
 }
 
 tr, td{
@@ -9,10 +10,10 @@ tr, td{
     border: 1px solid black;
 }
 
-every other row is highlighted in the table
+/*every other row is highlighted in the table*/
 td :nth-child(even){
     background-color: azure;
-}*/
+}
 
 /*removes bullet points from list*/
 ul{
@@ -100,7 +101,7 @@ li.dropdown{
 
 .column{
     float: left;
-    height: 600px;/*for testing purposes comment out before done*/
+    /*height: 600px;/*for testing purposes comment out before done*/
 }
 
 .side{

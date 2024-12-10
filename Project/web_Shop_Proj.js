@@ -40,3 +40,31 @@ for (const navBar of navBarElem){
 }
 
 
+fetch('https://fakestoreapi.com/users')
+    .then(res=>res.json())
+    .then(json=>console.log(json));
+
+
+/*async function getProductsFromServer(){
+    let responseObject = await fetch('https://fakestoreapi.com/products');
+    let storeProducts = await responseObject.json();
+    console.log(storeProducts);
+    showProducts(storeProducts);
+}*/
+
+fetch('https://fakestoreapi.com/products')
+            .then(res=>res.json())
+            .then(jsondata =>showProducts(jsondata))
+
+function showProducts(product){
+    const table = document.getElementById('displayTable');
+    console.log(product);
+    for (let i=0; i<product.length; i++){
+        let productDetails = product[i];
+        const row = table.insertRow();
+        row.insertCell().innerText = productDetails.title;
+        row.insertCell().innerText = productDetails.description;
+        row.insertCell().innerText = '$'+productDetails.price;
+        row.insertCell().innerHTML = productDetails.image;
+    }
+}
