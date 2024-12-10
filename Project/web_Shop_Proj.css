@@ -1,4 +1,4 @@
-table{
+/*table{
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     border: 1px solid black;
@@ -9,10 +9,10 @@ tr, td{
     border: 1px solid black;
 }
 
-/*every other row is highlighted in the table*/
+every other row is highlighted in the table
 td :nth-child(even){
     background-color: azure;
-}
+}*/
 
 /*removes bullet points from list*/
 ul{
@@ -90,7 +90,7 @@ li.dropdown{
 
 /*color change on hover over links*/
 .dropdownContent a:hover{
-    background-color: brown;
+    background-color: rgba(80, 172, 141, 0.996);
 }
 
 /*display content on hover*/
@@ -104,13 +104,13 @@ li.dropdown{
 }
 
 .side{
-    width: 10%;
-    background-color: aliceblue;
+    width: 5%;
+    background-color: rgb(176, 245, 175);
 }
 
 .middle{
-    width: 80%;
-    background-color: aquamarine;
+    width: 90%;
+    background-color: rgb(143, 243, 142);
 }
 
 .divider{
@@ -121,4 +121,8 @@ li.dropdown{
     content: "";
     display: table;
     clear: both;
+}
+
+.head{
+    background-image: url(img/floral_yellow_banner.webp);
 }

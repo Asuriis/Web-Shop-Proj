@@ -2,7 +2,7 @@ const home = document.getElementById('navHome');
 const shop = document.getElementById('navShop');
 const deals = document.getElementById('navDeals');
 const basket = document.getElementById('navBasket');
-const contact = document.getElementById('navContact');
+const about = document.getElementById('navAbout');
 
 const navBarElem = document.querySelectorAll('.navBar');
 
