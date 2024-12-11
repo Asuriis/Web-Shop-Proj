@@ -3,6 +3,7 @@ table{
     text-align: center;
     border: 1px solid black;
     width: 100%;
+    background-color: aliceblue;
 }
 
 tr, td{
@@ -102,6 +103,7 @@ li.dropdown{
 .side{
     width: 5%;
     /*background-color: rgb(176, 245, 175);*/
+    height: 100%;
 }
 
 .middle{
@@ -121,4 +123,19 @@ li.dropdown{
 
 .head{
     background-image: url(img/floral_yellow_banner.webp);
+}
+
+.bg{
+    
+    height: 100%;
+    width: auto;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(white, rgb(131, 50, 131));
+    
+}
+
+body, html{
+    height: 100%;
+    margin: 0;
 }

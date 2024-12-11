@@ -19,7 +19,8 @@
         <a href='#' class="dropdownBtn">Categories</a>
         <div class="dropdownContent">
             <a id="jewelery" href="#">Jewelery</a>
-            <a id="apparel" href="#">Apparel</a>
+            <a id="apparelMen" href="#">Mens Apparel</a>
+            <a id="apparelWomen" href="#">Womens Apparel</a>
             <a id="electronics" href="#">Electronics</a>
         </div>
     </li>
@@ -28,13 +29,21 @@
 </ul>
 
 <!--Page column layout-->
-<div class="row">
+<div class="row bg" style="height: 100%;">
     <div class="column side">
         <h1 style="text-align: right;">Test</h1>
     </div>
     <div class="column middle">
         <h1 style="text-align: center;">Test</h1>
-        <table id="displayTable"></table>
+        <table id="displayTable">
+            <thead>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Image</th>
+            </thead>
+            <tbody></tbody>
+        </table>
     </div>
     <div class="column side">
         <h1>Test</h1>
