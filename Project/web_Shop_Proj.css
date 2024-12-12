@@ -22,7 +22,7 @@ ul{
 
 li{
     float: left;
-    border-right: 1px solid snow;
+    /*border-right: 1px solid snow;*/
 }
 
 li:last-child{
@@ -63,7 +63,7 @@ li a:hover, .dropdown:hover .dropdownBtn{
 /*positions the dropdown (parent)*/
 li.dropdown{
     display: inline-block;
-    position: absolute;
+    position: relative;
 }
 
 /*style the dropdown content (child)*/
@@ -136,4 +136,14 @@ li.dropdown{
 body, html{
     height: 100%;
     margin: 0;
+}
+
+.title{
+    text-align: center; 
+    font-family: 'Courier New', Courier, monospace; 
+    color: #fff;
+    text-shadow: -1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000;;
 }

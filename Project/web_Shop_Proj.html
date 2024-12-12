@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flower Shop</title>
+    <title>Web Shop</title>
     <link rel="stylesheet" href="web_Shop_Proj.css">
 </head>
 <body class="bg">
 <div class="head">
-    <h1 style="text-align: center;">Generic Title Element</h1>
-    <h3 style="text-align: center;">Description / Welcome</h3>
+    <h1 class="title">Bundle</h1>
+    <h3 class="title">"We don't have it!"</h3>
 </div>
-<ul>
+<ul> <!--hrefs for most can be removed as they're not used, anywhere with only # placeholder-->
     <li id='navHome' class='navBar'><a href='web_Shop_Proj.html#'>Home</a></li>
     <li id='navAbout' class='navBar'><a href='web_Shop_Proj_About.html'>About</a></li>
     <li id='navShop' class='navBar'><a href='#'>Shop All</a></li>
@@ -24,7 +24,20 @@
             <a id="electronics" href="#">Electronics</a>
         </div>
     </li>
-    <li id='navBasket' class='navBar' style="float: right;"><a href='#'>Basket</a></li>
+    <li id='navBasket' class='navBar' style="float: right;">
+        <a href='#'>Cart</a>
+        <div id="baskdiv" style="display: none;">
+            <table id="userCart">
+                <thead>
+                    <th style="text-align: center;">Your Cart</th>
+                </thead>
+                <tbody></tbody>
+                <tfoot>
+                    <button id="checkout" value="Checkout"></button>
+                </tfoot>
+            </table>
+        </div>
+    </li>
     <li style="float: right;"><a href='#'>Login</a></li>
 </ul>
 
