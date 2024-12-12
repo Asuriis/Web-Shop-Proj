@@ -196,3 +196,34 @@ function showApparelWomen(){
         }
     } 
 }
+
+
+let shopAllBtn = document.getElementById('navShop');
+shopAllBtn.addEventListener('click', showAllProducts);
+
+
+function showAllProducts(product){
+    readData();
+    async function readData() {
+    let myObject = await fetch('https://fakestoreapi.com/products');
+    let objectInfo = await myObject.json();
+    showAll(objectInfo);
+    }
+    function showAll(product){
+        const table = document.getElementById('displayTable');
+        const tableBody = table.querySelector('tbody');
+        console.log(product);
+        for (let i=0; i<product.length; i++){
+            let productDetails = product[i];
+            let row = tableBody.insertRow();
+            row.insertCell().innerText = productDetails.title;
+            row.insertCell().innerText = productDetails.description;
+            row.insertCell().innerText = '$'+productDetails.price;
+            let img = document.createElement('img');
+            img.setAttribute('style', 'width: 150px; height: 150px');
+            img.src = productDetails.image;
+            row.insertCell().appendChild(img);
+        }
+    }
+  
+}

@@ -126,13 +126,11 @@ li.dropdown{
 }
 
 .bg{
-    
-    height: 100%;
-    width: auto;
+    height: 100vh; /*viewport height*/
+    width: 100vw;   /*viewport width*/
     background-position: center;
     background-size: cover;
-    background-image: linear-gradient(white, rgb(131, 50, 131));
-    
+    background-image: linear-gradient(to bottom right, rgba(128, 0, 128, 0), rgba(128, 0, 128, 1));
 }
 
 body, html{
