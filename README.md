@@ -1,2 +1,2 @@
 # Web-Shop-Proj
- Final project for introduuction to programming
+ Final project for introduction to programming
